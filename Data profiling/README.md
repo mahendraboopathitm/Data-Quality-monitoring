@@ -35,7 +35,7 @@ Think of it like a **regular health checkup for your data** — not just "did it
 
 ##  What Does Data Profiling Monitor?
 
-### 1. 📈 Statistical Distribution
+### 1.  Statistical Distribution
 Tracks per-column statistics over time:
 - Min, max, mean, median
 - Percentiles (e.g. 90th percentile of a numeric column)
@@ -76,7 +76,7 @@ If `customers_raw` feeds a machine learning model, profiling can track:
 
 ---
 
-## ⚙️ How Data Profiling Works (Behind the Scenes)
+##  How Data Profiling Works (Behind the Scenes)
 
 ```
 customers_raw (primary table)
@@ -123,6 +123,7 @@ LIMIT 50;
 Common columns you'll see: `column_name`, `data_type`, `num_nulls`, `percent_null`, `min`, `max`, `mean`, `stddev`, `distinct_count`
 
 ---
+<img width="1919" height="1002" alt="image" src="https://github.com/user-attachments/assets/17c65905-e845-4322-9638-7008054254fc" />
 
 ### 2. Drift Metrics Table
 Stores how much each column has drifted compared to the previous window or baseline.
@@ -138,6 +139,8 @@ LIMIT 50;
 Common columns: `column_name`, `drift_type`, `drift_value`, `threshold`
 
 ---
+<img width="1916" height="1011" alt="image" src="https://github.com/user-attachments/assets/9537e19b-7c01-4734-be4c-aa4fdb5eaed3" />
+
 
 ### 3. Auto-Generated Dashboard
 A Lakeview dashboard is created automatically showing:
@@ -149,6 +152,7 @@ A Lakeview dashboard is created automatically showing:
 You can fully customize this dashboard in the Databricks Dashboards UI.
 
 ---
+<img width="1910" height="1016" alt="image" src="https://github.com/user-attachments/assets/3c22c73a-ebdb-4a79-8c2a-b7288d7bc2f1" />
 
 ##  How to Enable Data Profiling on `customers_raw`
 
